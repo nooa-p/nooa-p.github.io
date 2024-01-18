@@ -1,6 +1,6 @@
 function App() {
   return (
-    <p>Hello World!</p>
+    <p className="text-3xl">Hello World!</p>
   )
 }
 
