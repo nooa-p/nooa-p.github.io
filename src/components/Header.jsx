@@ -22,7 +22,10 @@ function Toggle() {
   }
 
   return (
-    <></>
+    <div onClick={handleClick} className="">
+      <Moon className={isDark ? 'opacity-0' : 'opacity-100'} />
+      <Sun className={'-mt-6 ' + (isDark ? 'opacity-100' : 'opacity-0')} />
+    </div>
   )
 }
 
