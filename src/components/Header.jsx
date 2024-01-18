@@ -5,12 +5,14 @@ function Toggle() {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
+    // check user color scheme preference on page load
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.getElementById('root').classList.add('dark')
       setIsDark(true)
     }
   }, [])
 
+  // handle clicking color scheme toggle
   function handleClick() {
     if (isDark) {
       setIsDark(false)
