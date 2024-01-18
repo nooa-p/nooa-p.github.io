@@ -22,7 +22,7 @@ function Toggle() {
   }
 
   return (
-    <div onClick={handleClick} className="">
+    <div onClick={handleClick} className="hover:cursor-pointer">
       <Moon className={isDark ? 'opacity-0' : 'opacity-100'} />
       <Sun className={'-mt-6 ' + (isDark ? 'opacity-100' : 'opacity-0')} />
     </div>
@@ -31,12 +31,12 @@ function Toggle() {
 
 function Header() {
   return (
-    <header className="flex flex-row justify-between max-w-3xl mx-auto">
-      <h1>Nooa P.</h1>
+    <header className="flex flex-row justify-between max-w-3xl mx-auto lowercase">
+      <h1 className="hover:cursor-default">Nooa P.</h1>
       <nav className="flex flex-row gap-x-4 md:gap-x-8">
-        <a href="/">About</a>
-        <a href="/">Projects</a>
-        <a href="/">Contact</a>
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
         <Toggle />
       </nav>
     </header>
