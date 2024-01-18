@@ -21,18 +21,16 @@ function Toggle() {
     }
   }
 
-  if (isDark) {
-    return <Sun onClick={handleClick}/>
-  } else {
-    return <Moon onClick={handleClick}/>
-  }
+  return (
+    <></>
+  )
 }
 
 function Header() {
   return (
-    <header className="flex flex-row">
-      <h1>Nooa Peltokangas</h1>
-      <nav>
+    <header className="flex flex-row justify-between max-w-3xl mx-auto">
+      <h1>Nooa P.</h1>
+      <nav className="flex flex-row gap-x-4 md:gap-x-8">
         <a href="/">About</a>
         <a href="/">Projects</a>
         <a href="/">Contact</a>
