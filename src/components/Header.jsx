@@ -24,9 +24,9 @@ function Toggle() {
   }
 
   return (
-    <div onClick={handleClick} className="hover:cursor-pointer self-center">
-      <Moon className={isDark ? 'opacity-0' : 'opacity-100'} />
-      <Sun className={'-mt-6 ' + (isDark ? 'opacity-100' : 'opacity-0')} />
+    <div onClick={handleClick} className="hover:cursor-pointer self-center" tabIndex={0}>
+      <Moon className="opacity-100 dark:opacity-0 transition-opacity ease-in duration-150 motion-reduce:transition-none" />
+      <Sun className="-mt-6 opacity-0 dark:opacity-100 transition-opacity ease-in duration-150 motion-reduce:transition-none" />
     </div>
   )
 }
