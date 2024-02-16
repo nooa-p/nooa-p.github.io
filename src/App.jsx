@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <main className="max-w-3xl mx-auto">
+    <main className="max-w-3xl mx-auto mt-12 flex flex-col">
       <Header />
         <Intro />
         <About />
