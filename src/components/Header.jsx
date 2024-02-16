@@ -7,7 +7,7 @@ function Toggle() {
   useEffect(() => {
     // check user color scheme preference on page load
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.getElementById('root').classList.add('dark')
+      document.getElementsByTagName('html')[0].classList.add('dark')
       setIsDark(true)
     }
   }, [])
@@ -16,10 +16,10 @@ function Toggle() {
   function handleClick() {
     if (isDark) {
       setIsDark(false)
-      document.getElementById('root').classList.remove('dark')
+      document.getElementsByTagName('html')[0].classList.remove('dark')
     } else {
       setIsDark(true)
-      document.getElementById('root').classList.add('dark')
+      document.getElementsByTagName('html')[0].classList.add('dark')
     }
   }
 
