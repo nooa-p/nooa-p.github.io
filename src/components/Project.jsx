@@ -1,6 +1,6 @@
 function Project() {
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="">
       <p>Project</p>
     </div>
   )

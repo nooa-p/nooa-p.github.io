@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="">
       <p>Footer</p>
     </div>
   )

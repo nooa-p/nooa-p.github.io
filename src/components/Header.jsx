@@ -33,7 +33,7 @@ function Toggle() {
 
 function Header() {
   return (
-    <header className="flex flex-row justify-between max-w-3xl mx-auto lowercase md:text-lg">
+    <header className="flex flex-row justify-between lowercase md:text-lg">
       <h1 className="hover:cursor-default font-extrabold">Nooa P.</h1>
       <nav className="flex flex-row gap-x-4 md:gap-x-8 font-semibold">
         <a href="#about">About</a>
