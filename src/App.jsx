@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <main className="max-w-3xl mx-auto mt-12 flex flex-col p-8">
+    <main className="max-w-3xl mx-auto mt-12 flex flex-col p-8 gap-4">
       <Header />
         <Intro />
         <About />
