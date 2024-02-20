@@ -1,6 +1,6 @@
 function Project() {
   return (
-    <div className="border-b">
+    <div className="">
       <p>Project</p>
     </div>
   )
