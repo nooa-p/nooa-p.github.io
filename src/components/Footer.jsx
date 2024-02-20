@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="">
+    <div className="bg-slate-50 px-6 py-4 rounded-md smooth-shadow">
       <p>Footer</p>
     </div>
   )
