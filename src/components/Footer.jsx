@@ -1,7 +1,10 @@
+import { Copyright } from "lucide-react"
+
 function Footer() {
   return (
-    <div className="bg-slate-50 px-6 py-4 rounded-md smooth-shadow">
-      <p>Footer</p>
+    <div className="flex flex-row text-xs justify-center items-center gap-1.5">
+      <Copyright size={14} strokeWidth={1} absoluteStrokeWidth />
+      <p>Nooa Peltokangas</p>
     </div>
   )
 }
