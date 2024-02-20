@@ -1,7 +1,7 @@
 function Intro() {
   return (
     <div className="border-b">
-      <p>Intro</p>
+      <h2>Hi, I&apos;m Nooa</h2>
     </div>
   )
 }
