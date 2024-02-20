@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="">
+    <div className="border-b">
       <p>About</p>
     </div>
   )

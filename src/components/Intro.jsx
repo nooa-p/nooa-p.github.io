@@ -1,6 +1,6 @@
 function Intro() {
   return (
-    <div className="">
+    <div className="border-b">
       <p>Intro</p>
     </div>
   )
