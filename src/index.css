@@ -5,7 +5,7 @@
 @layer base {
   /* gradient from webgradients.com by dima braven */
   body {
-    background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);;
+    background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
     background-attachment: fixed;
   }
 }
@@ -15,5 +15,23 @@
     box-shadow: 
     rgba(0, 0, 0, 0.12) 0px 1px 3px, 
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .title-underline {
+    background: linear-gradient(-60deg, #f794a4 0%, #fdd6bd 100%);
+    background-repeat: repeat-x;
+    background-size: 100% 4px;
+    background-position: 0 99%;
+  }
+
+  .profile-outline {
+    background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background-attachment: fixed;
+  }
+
+  .profile-outset {
+    @apply border-2 border-slate-50 rounded-full
   }
 }
