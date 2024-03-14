@@ -5,7 +5,6 @@ function Header() {
       <nav className="flex flex-row gap-x-2 md:gap-x-8 font-semibold text-sm md:text-lg">
         <a href="#about">About</a>
         <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
       </nav>
     </header>
   )
