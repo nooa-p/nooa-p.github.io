@@ -18,6 +18,9 @@ function Header() {
     return () => window.removeEventListener('resize', updateMedia)
   }, [])
 
+
+  // TODO: add dark mode toggle back?
+  
   return (
     <header className="flex flex-row justify-between items-center lowercase md:text-lg bg-slate-50 px-6 py-4 rounded-md smooth-shadow">
       <h1 className="hover:cursor-default font-extrabold">{isMobile ? "nooa p." : "nooa peltokangas"}</h1>
