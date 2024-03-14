@@ -8,6 +8,9 @@ function Intro() {
         <h2 className="text-3xl font-semibold">hi, i&apos;m nooa &#128075;</h2>
       </div>
       <h3 className="text-xl font-light pt-4 px-4 leading-9">a <span className="title-underline font-medium">full-stack web developer</span>, with special interest in creating simple yet aesthetic web design and practical data tracking tools</h3>
+      <div>
+
+      </div>
     </div>
   )
 }

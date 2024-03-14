@@ -1,10 +1,10 @@
-import { Copyright } from "lucide-react"
+import { IconCopyright } from "@tabler/icons-react"
 
 function Footer() {
   return (
-    <div className="flex flex-row text-xs justify-center items-center gap-1.5 font-light">
-      <Copyright size={14} strokeWidth={0.75} absoluteStrokeWidth />
-      <p className="leading-3 -mt-[0.5px]">Nooa Peltokangas</p>
+    <div className="flex flex-row text-sm justify-center items-center gap-1 font-light">
+      <IconCopyright size={20} strokeWidth={1.25} />
+      <p className="leading-3 -mt-[0.5px]">2024 Nooa Peltokangas</p>
     </div>
   )
 }
