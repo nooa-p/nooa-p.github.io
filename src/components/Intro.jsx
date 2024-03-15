@@ -9,8 +9,8 @@ function Intro() {
         </div>
         <h2 className="text-3xl font-semibold">hi, i&apos;m nooa &#128075;</h2>
       </div>
-      <h3 className="text-xl font-light pt-4 sm:px-4 leading-9">a <span className="title-underline font-medium">full-stack web developer</span>, with special interest in creating simple yet aesthetic web design and practical data tracking tools</h3>
-      <div className="flex flex-col sm:flex-row sm:px-4 pt-2 sm:pt-1 gap-4 text-base font-normal text-slate-600 leading-4">
+      <h3 className="text-xl font-light pt-4 sm:px-4 leading-9">a <span className="title-underline font-medium">full-stack web developer</span>, with a special interest in creating simple yet aesthetic web design and practical data tracking tools</h3>
+      <div className="flex flex-col sm:flex-row sm:px-4 pt-2 sm:pt-1 sm:pb-3 gap-4 text-base font-normal text-slate-600 leading-4">
         <div className="flex flex-row gap-1 items-center">
           <IconAt size={18} className="text-[#fab8b2]" />
           <a href="mailto:nooa@peltokangas.dev" className="">mail</a>
