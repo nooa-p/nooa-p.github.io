@@ -1,7 +1,7 @@
 function Project() {
   return (
-    <div className="">
-      <p>Project</p>
+    <div id="project" className="py-4">
+      <h3 className="text-lg font-medium">featured projects</h3>
     </div>
   )
 }

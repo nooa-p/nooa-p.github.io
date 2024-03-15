@@ -19,8 +19,8 @@ function Skills() {
   return (
     skills.map((skill) => {
       return (
-        <div key={skill.label} className="w-1/2 p-0.5">
-          <div className="flex flex-col bg-romantic-100 rounded items-center p-2.5 gap-0.5 border border-romantic-200">
+        <div key={skill.label} className="min-w-[84.5px] p-0.5">
+          <div className="flex flex-col bg-[#ffecde] rounded items-center p-2.5 gap-0.5 border border-romantic-200 max-w-[80.5px]">
           <skill.icon size={40} strokeWidth={1} />
           <h4 className="uppercase text-[11px]">{skill.label}</h4>
           </div>
@@ -32,13 +32,14 @@ function Skills() {
 
 function About() {
   return (
-    <div id="about" className="border-b flex flex-col sm:flex-row py-4">
-      <div className="basis-9/12">
-        <h3 className="text-lg font-medium">about me</h3>
+    <div id="about" className="border-b flex flex-col md:flex-row py-4">
+      <div className="basis-[73%]">
+        <h3 className="text-lg font-medium mb-3">about me</h3>
+
       </div>
-      <div className="basis-3/12">
-        <h3 className="text-lg font-medium">skills</h3>
-        <div className="flex flex-wrap">
+      <div className="basis-[27%]">
+        <h3 className="text-lg font-medium md:ml-1 mb-3">skills</h3>
+        <div className="flex flex-wrap justify-center">
           <Skills />
         </div>
       </div>
