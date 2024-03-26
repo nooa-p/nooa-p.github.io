@@ -2,7 +2,7 @@ function ProjectList() {
   const projects = [
     {
       name: "personal portfolio",
-      description: "description",
+      description: "",
       image: "https://placehold.co/1280x720",
       techs: [
         "react", "vite", "tailwind css"
@@ -46,19 +46,24 @@ function ProjectList() {
     projects.map((project) => {
       return (
         <div key={project.name} className="flex flex-col sm:flex-row gap-3.5">
-          <img src={project.image} alt="" className="rounded-sm sm:w-1/2 border" />
-          <div className="space-y-1">
+          <img src={project.image} alt="" className="rounded sm:w-1/2 sm:min-w-[326px] border" />
+          <div className="flex flex-col sm:justify-between sm:py-1">
+            <div className="space-y-2 mb-2 sm:mb-2">
             <h4 className="font-medium">{project.name}</h4>
-            <div className="flex flex-row gap-1.5">
+            <div className="flex flex-row gap-1.5 flex-wrap">
               {project.techs.map((tech) => {
                 return (
-                  <div key={tech} className="bg-[#ffecde] border border-romantic-200 text-[10px] uppercase py-[1px] px-1 rounded-sm">{tech}</div>
+                  <div key={tech} className="bg-[#ffecde] border border-romantic-200 text-[10px] uppercase py-[1px] px-1 rounded-sm text-nowrap">{tech}</div>
                 )
               })}
             </div>
-            <p>{project.description}</p>
-            {project.live ? <a href={project.live}>live</a> : ""}
-            {project.repo ? <a href={project.repo}>repo</a> : ""}
+            <p className="text-sm">{project.description}</p>
+            </div>
+            <div>
+              {/* TODO: add icons for links? */}
+            {project.live ? <a href={project.live} className="py-0.5 px-2.5 mr-2 border border-pink-salmon-200 rounded-sm text-sm bg-[#ffe1de]">live</a> : ""}
+            {project.repo ? <a href={project.repo} className="py-0.5 px-2.5 border border-pink-salmon-200 text-sm rounded-sm bg-[#ffe1de]">github</a> : ""}
+            </div>
           </div>
         </div>
       )
