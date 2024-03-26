@@ -45,10 +45,20 @@ function ProjectList() {
   return (
     projects.map((project) => {
       return (
-        <div key={project.name} className="flex flex-col sm:flex-row">
-          <img src="https://placehold.co/200x113" alt="" />
+        <div key={project.name} className="flex flex-col sm:flex-row gap-2 p-2 border rounded">
+          <img src="https://placehold.co/200x113" alt="" className="rounded-sm" />
           <div>
             <h4>{project.name}</h4>
+            <div className="flex flex-row">
+              {project.techs.map((tech) => {
+                return (
+                  <div key={tech}>{tech}</div>
+                )
+              })}
+            </div>
+            <p>{project.description}</p>
+            {project.live ? <a href={project.live}>live</a> : ""}
+            {project.repo ? <a href={project.repo}>repo</a> : ""}
           </div>
         </div>
       )
@@ -58,9 +68,9 @@ function ProjectList() {
 
 function Project() {
   return (
-    <div id="project" className="py-4">
-      <h3 className="text-lg font-medium">featured projects</h3>
-      <div className="flex flex-col gap-2">
+    <div id="project" className="py-2">
+      <h3 className="text-lg font-medium my-3">featured projects</h3>
+      <div className="flex flex-col gap-4">
         <ProjectList />
       </div>
     </div>
