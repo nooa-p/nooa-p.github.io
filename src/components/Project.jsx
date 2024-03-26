@@ -3,7 +3,7 @@ function ProjectList() {
     {
       name: "personal portfolio",
       description: "description",
-      image: "",
+      image: "https://placehold.co/1280x720",
       techs: [
         "react", "vite", "tailwind css"
       ],
@@ -13,7 +13,7 @@ function ProjectList() {
     {
       name: "gacha game tools",
       description: "description",
-      image: "",
+      image: "project2-min.webp",
       techs: [
         "next.js", "typescript", "tailwind css", "postgresql"
       ],
@@ -23,7 +23,7 @@ function ProjectList() {
     {
       name: "audiophile e-commerce website",
       description: "description",
-      image: "",
+      image: "https://placehold.co/1280x720",
       techs: [
         "react", "vite", "vanilla css"
       ],
@@ -33,7 +33,7 @@ function ProjectList() {
     {
       name: "countries through rest api",
       description: "description",
-      image: "",
+      image: "project4-min.webp",
       techs: [
         "next.js", "typescript", "tailwind css"
       ],
@@ -45,14 +45,14 @@ function ProjectList() {
   return (
     projects.map((project) => {
       return (
-        <div key={project.name} className="flex flex-col sm:flex-row gap-2 p-2 border rounded">
-          <img src="https://placehold.co/200x113" alt="" className="rounded-sm" />
-          <div>
-            <h4>{project.name}</h4>
-            <div className="flex flex-row">
+        <div key={project.name} className="flex flex-col sm:flex-row gap-3.5">
+          <img src={project.image} alt="" className="rounded-sm sm:w-1/2 border" />
+          <div className="space-y-1">
+            <h4 className="font-medium">{project.name}</h4>
+            <div className="flex flex-row gap-1.5">
               {project.techs.map((tech) => {
                 return (
-                  <div key={tech}>{tech}</div>
+                  <div key={tech} className="bg-[#ffecde] border border-romantic-200 text-[10px] uppercase py-[1px] px-1 rounded-sm">{tech}</div>
                 )
               })}
             </div>
@@ -70,7 +70,7 @@ function Project() {
   return (
     <div id="project" className="py-2">
       <h3 className="text-lg font-medium my-3">featured projects</h3>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         <ProjectList />
       </div>
     </div>
