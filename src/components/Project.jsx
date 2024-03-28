@@ -4,7 +4,7 @@ function ProjectList() {
   const projects = [
     {
       name: "personal portfolio",
-      description: "This website! Showcasing my own design, a simple single-page layout. Trying to play with colours, and making a portfolio I would personally like.",
+      description: "This website! Showcasing my own design with a simple single-page layout, that is easy to make responsive. Trying to play with colours, and making a portfolio I would personally like.",
       techs: [
         "react", "vite", "tailwind css"
       ],

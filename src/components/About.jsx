@@ -35,7 +35,7 @@ function About() {
     <div id="about" className="border-b flex flex-col md:flex-row py-4">
       <div className="basis-[73%]">
         <h3 className="text-lg font-medium mb-3">about me</h3>
-
+{/* TODO: about me??? */}
       </div>
       <div className="basis-[27%]">
         <h3 className="text-lg font-medium md:ml-1 mb-3">skills</h3>
